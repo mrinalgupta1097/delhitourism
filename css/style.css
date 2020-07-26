@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #eebb4d;
+    --link-color: #ffe4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+
+/* navigation bar */
+
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: var(--link-color);
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffdd;
+    background: #262626;
+    border-bottom: 1px solid#ba7967;
+}
+
+
+/* main page */
+
+.main {
+    position: relative;
+    background: url("../Images/background-main.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 220px 0 200px;
+}
+
+.main h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    color: var(--link-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.main h2>span {
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    animation: animate infinite 8s;
+}
+
+.main h2>span:before {
+    content: "";
+    animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0% {
+        content: "Delhi";
+    }
+    25% {
+        content: "Capital Of India";
+    }
+    50% {
+        content: "Heart Of India";
+    }
+    75% {
+        content: "City Of Rallies";
+    }
+    100% {
+        content: "Dilli!!";
+    }
+}
+
+.main-content {
+    z-index: 20;
+}
+
+.main p {
+    margin-top: 1rem;
+    padding: 0;
+    font-size: 1rem;
+    color: #dcdde1;
+}
+
+.main .btn {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0 20px;
+}
+
+
+/* about */
+
+.carousel .carousel-inner img {
+    width: auto;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.carousel-item {
+    position: relative !important;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption {
+    bottom: 30%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: merienda;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-dark .navbar-nav .nav-item .nav-link {
+        color: var(--link-color);
+        background: var(--primary-color);
+    }
+}
+
+
+/*things to do  */
